@@ -21,3 +21,4 @@
 - 网络请求框架：[retrofit](https://github.com/square/leakcanary)
 - google官方生命周期管理框架：[architecture](https://github.com/googlesamples/android-architecture)
 - databinding省去了各种findById
+- android material design风格，过场动画等，后期还会加上色卡选择器
