@@ -1,5 +1,5 @@
 # Book
-基于android最新架构MVVM，在此基础进行了进一步架构优化，接口用的豆瓣和ebook的api，如有侵权立删除，此项只做学习用。
+基于android最新架构MVVM，在此基础进行了进一步架构优化，接口用的豆瓣和ebook的api，如有侵权立删除，此项只做学习用,目前项目还在维护中，整体架构还需调整。
 # Book
 
 #### 项目介绍
@@ -20,3 +20,4 @@
 - 内存泄漏检测工具：[leakcanary](https://github.com/square/leakcanary)
 - 网络请求框架：[retrofit](https://github.com/square/leakcanary)
 - google官方生命周期管理框架：[architecture](https://github.com/googlesamples/android-architecture)
+- databinding省去了各种findById
