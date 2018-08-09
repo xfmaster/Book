@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="common_color">#e44f24</color>
+    <color name="common_text_title_color">#212121</color>
+    <color name="common_text_summary_color">#c1c1c1</color>
+    <color name="common_text_color">#414141</color>
+    <color name="line_color">#B5B5B5</color>
+    <color name="comment_star_color">#ffc600</color>
+    <color name="white">#FFFFFF</color>
+    <color name="book_title_mask">#80000000</color>
+
+    <!--navigation header-->
+    <color name="startColor">#81C784</color>
+    <color name="centerColor">#4CAF50</color>
+    <color name="endColor">#2E7D32</color>
+    <color name="translucent">#00000000</color>
+</resources>

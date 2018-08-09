@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">阅读</string>
+    <!--binding用到的字符串拼接-->
+    <string name="separator">/</string>
+    <string name="author">作者：</string>
+    <string name="empty">""</string>
+    <string name="zero">"0"</string>
+    <string name="number">1.0</string>
+    <string name="follow">人在追</string>
+    <string name="wordCount">万字</string>
+</resources>

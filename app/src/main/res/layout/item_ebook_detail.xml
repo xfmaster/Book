@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="com.xf.oschina.module.story.domain.EBookComment" />
+
+        <import type="android.view.View" />
+
+        <variable
+            name="comment"
+            type="com.xf.oschina.module.story.domain.EBookComment" />
+    </data>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:id="@+id/iv_head"
+            imageCircle="@{comment.author.avatar}"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:text="@{comment.author.nickname}"
+            android:textColor="@color/common_text_title_color"
+            android:textSize="@dimen/titleSize"
+            app:layout_constraintStart_toEndOf="@id/iv_head" />
+
+        <android.support.v7.widget.AppCompatRatingBar
+            android:id="@+id/ratingBar2"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:isIndicator="true"
+            android:max="10"
+            android:numStars="5"
+            android:progressDrawable="@drawable/rating_bar_bg"
+            android:rating="@{comment.rating}"
+            android:secondaryProgressTint="@color/comment_star_color"
+            app:layout_constraintStart_toEndOf="@+id/tv_name" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:text="@{comment.content}"
+            android:textColor="@color/common_text_title_color"
+            android:textSize="@dimen/titleSize"
+            app:layout_constraintTop_toBottomOf="@+id/iv_head" />
+    </android.support.constraint.ConstraintLayout>
+</layout>

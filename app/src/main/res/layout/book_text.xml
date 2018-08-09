@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:pager="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="com.xf.oschina.module.story.domain.ChapterPager" />
+
+
+        <variable
+            name="pager"
+            type="ChapterPager" />
+    </data>
+
+    <com.xf.oschina.view.book.Pager xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="left"
+        android:padding="10dp"
+        pager:bgColor="@color/common_color"
+        pager:text="@{pager.body}"
+        pager:textColor="@color/common_text_title_color"
+        pager:textSize="16sp">
+
+    </com.xf.oschina.view.book.Pager>
+</layout>
